@@ -1,13 +1,17 @@
 # go-playground
 
-Simple go backend with gin, gorm and postres
+Simple go backend with gin, gorm and postgreSQL
 
 # Create new task using curl
-`curl -H 'Content-Type: application/json' \
+```bash
+curl -H 'Content-Type: application/json' \
       -d '{ "description":"new task", "completed":false}' \
       -X POST \
-      http://localhost:8080/tasks`
+      http://localhost:8080/tasks
+```
 
 
 # build the docker image
-`docker buildx build --sbom=true --provenance=true -t ivancurkovic046/go-playground:0.0.1 .`
+```bash
+docker buildx build --sbom=true --provenance=true -t ivancurkovic046/go-playground:0.0.1 .
+```
